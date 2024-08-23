@@ -104,9 +104,9 @@ void ins(vector<int>& num,vector<int>& den,string s,bool b){
                 break;
             }
         }
-        if(nume==0){
-            return "0/1";
-        }
+        // if(nume==0){
+        //     return "0/1";
+        // }
         // if(nume%deno==0){
         //     return its(nume/deno)+"/1";
         // }
