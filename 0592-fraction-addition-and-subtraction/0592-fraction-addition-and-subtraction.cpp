@@ -97,7 +97,7 @@ void ins(vector<int>& num,vector<int>& den,string s,bool b){
         for(int i=0;i<num.size();i++){
             nume+=(num[i]*(deno/den[i]));
         }
-        for(int i=max(nume,deno)/2+1;i>0;i--){
+        for(int i=max(nume,deno);i>0;i--){
             if(nume%i==0 && deno%i==0){
                 nume=nume/i;
                 deno=deno/i;
@@ -107,9 +107,9 @@ void ins(vector<int>& num,vector<int>& den,string s,bool b){
         if(nume==0){
             return "0/1";
         }
-        if(nume%deno==0){
-            return its(nume/deno)+"/1";
-        }
+        // if(nume%deno==0){
+        //     return its(nume/deno)+"/1";
+        // }
         return its(nume)+"/"+its(deno);
     }
 };
