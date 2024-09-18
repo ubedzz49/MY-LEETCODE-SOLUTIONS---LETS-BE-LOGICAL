@@ -22,17 +22,9 @@ void bfs(vector<vector<int>> adjl,int s,vector<bool>& universal){
 }
 
     int findCircleNum(vector<vector<int>>& isc) {
-        vector<vector<int>> adjl(isc.size());
-        for(int i=0;i<isc.size();i++){
-            for(int j=0;j<isc[i].size();j++){
-                if(isc[i][j]==1){
-                    adjl[i].push_back(j);
-                }
-            }
-        }
-        vector<bool> universal(adjl.size(),0);
+      vector<bool> universal(isc.size(),0);
         int c=0;
-        for(int i=0;i<adjl.size();i++){
+        for(int i=0;i<isc.size();i++){
             if(universal[i]==0){
                 c++;
                 bfs(isc,i,universal);
