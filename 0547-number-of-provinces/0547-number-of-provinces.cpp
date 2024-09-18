@@ -8,10 +8,13 @@ void bfs(vector<vector<int>> adjl,int s,vector<bool>& universal){
     universal[s]=1;
     while(!q.empty()){
         for(int i=0;i<adjl[q.front()].size();i++){
-            if(visited[adjl[q.front()][i]]==0){
-                visited[adjl[q.front()][i]]=1;
-                universal[adjl[q.front()][i]]=1;
-                q.push(adjl[q.front()][i]);
+            if(adjl[q.front()][i]==0){
+                continue;
+            }
+            if(visited[i]==0){
+                visited[i]=1;
+                universal[i]=1;
+                q.push(i);
             }
         }
         q.pop();
@@ -32,7 +35,7 @@ void bfs(vector<vector<int>> adjl,int s,vector<bool>& universal){
         for(int i=0;i<adjl.size();i++){
             if(universal[i]==0){
                 c++;
-                bfs(adjl,i,universal);
+                bfs(isc,i,universal);
             }
         }
         return c;
