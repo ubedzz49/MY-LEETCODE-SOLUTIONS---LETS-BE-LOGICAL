@@ -1,7 +1,7 @@
 bool compare(int a,int b){
-    string ab=to_string(a);
-    string ba=to_string(b);
-    return ab+ba>ba+ab;
+    string aa=to_string(a);
+    string bb=to_string(b);
+    return aa+bb>bb+aa;
 }
 class Solution {
 public:
