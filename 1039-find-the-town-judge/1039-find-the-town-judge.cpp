@@ -4,7 +4,6 @@ public:
         if(n==1){
             return 1;
         }
-        pair<int,int> p={0,0};
       vector<pair<int,int>> t(n+1,{0,0});
       for(int i=0;i<trust.size();i++){
         t[trust[i][0]].first+=1;
