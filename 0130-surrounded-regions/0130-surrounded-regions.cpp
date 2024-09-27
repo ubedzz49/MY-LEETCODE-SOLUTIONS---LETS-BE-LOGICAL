@@ -14,6 +14,7 @@ void dfs(vector<vector<char>>& board,vector<vector<bool>>& visited,int i,int j,v
         if(ispos(board,i+drow[a],j+dcol[a]) && board[i+drow[a]][j+dcol[a]]=='O' && visited[i+drow[a]][j+dcol[a]]==0){
             if(i+drow[a]==0 || j+dcol[a]==0 || j+dcol[a]==board[0].size()-1 || i+drow[a]==board.size()-1){
                 b=true;
+                return;
             }
             visited[i+drow[a]][j+dcol[a]]=1;
             board[i+drow[a]][j+dcol[a]]='X';
