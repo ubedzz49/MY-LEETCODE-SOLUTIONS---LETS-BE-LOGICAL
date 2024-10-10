@@ -1,48 +1,37 @@
 class Solution {
 public:
     int countPaths(int n, vector<vector<int>>& roads) {
-        const int MOD = 1e9 + 7;
-        vector<vector<pair<int, int>>> adj(n); // adjacency list with {neighbor, distance}
-        
-        // Building the graph
-        for (auto& road : roads) {
-            adj[road[0]].push_back({road[1], road[2]});
-            adj[road[1]].push_back({road[0], road[2]});
+        vector<pair<int,int>> adj1={};
+        vector<vector<pair<int,int>>> adj(n,adj1);
+        for(auto i:roads){
+            adj[i[0]].push_back(make_pair(i[1],i[2]));
+            adj[i[1]].push_back(make_pair(i[0],i[2]));
         }
-        
-        // Min-heap priority queue for Dijkstra's algorithm
-        priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
-        
-        // Distances and path counts
-        vector<long long> dist(n, LLONG_MAX); // shortest distance to each node
-        vector<int> ways(n, 0);               // number of ways to reach each node
-        
-        dist[0] = 0;  // starting node has 0 distance
-        ways[0] = 1;  // there's 1 way to reach the starting node
-        
-        pq.push({0, 0}); // {distance, node}
-        
-        while (!pq.empty()) {
-            long long d = pq.top().first;
-            int u = pq.top().second;
+        priority_queue<vector<long long>,vector<vector<long long>>,greater<vector<long long>>> pq;
+        vector<long long> sp(n,LLONG_MAX);
+        sp[0]=0;
+        vector<int> spw(n,0);
+        spw[0]=1;
+        pq.push({0,0});
+        const int MOD = 1e9 + 7;  // Define the modulo constant
+
+        while(!pq.empty()){
+            long long dist=pq.top()[0];
+            int node=pq.top()[1];
             pq.pop();
-            
-            // If we found a longer distance to `u`, skip processing
-            if (d > dist[u]) continue;
-            
-            for (auto& [v, time] : adj[u]) {
-                long long newDist = d + time;
-                
-                if (newDist < dist[v]) {
-                    dist[v] = newDist;
-                    ways[v] = ways[u];
-                    pq.push({newDist, v});
-                } else if (newDist == dist[v]) {
-                    ways[v] = (ways[v] + ways[u]) % MOD;
+            for(auto i:adj[node]){
+                long long newDist = dist + i.second;
+                if(newDist == sp[i.first]){
+                    spw[i.first] = (spw[i.first] + spw[node]) % MOD;  // Apply modulo
+                }
+                if(newDist < sp[i.first]){
+                    sp[i.first] = newDist;
+                    pq.push({sp[i.first], i.first});
+                    spw[i.first] = spw[node] % MOD;  // Apply modulo
                 }
             }
         }
-        
-        return ways[n - 1];
+
+        return spw[n-1] % MOD;  // Apply modulo to the result
     }
 };
