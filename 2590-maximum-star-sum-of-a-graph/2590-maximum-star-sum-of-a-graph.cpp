@@ -12,11 +12,6 @@ public:
             sort(it.begin(),it.end());
             reverse(it.begin(),it.end());
             adj[kk]=it;
-            cout<<"for "<<kk<<"-> ";
-            for(auto ii:adj[kk]){
-                cout<<ii<<" ";
-            }
-            cout<<endl;
             kk++;
         }
         int mx=INT_MIN;
