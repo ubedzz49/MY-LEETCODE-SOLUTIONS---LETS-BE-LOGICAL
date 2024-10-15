@@ -9,17 +9,13 @@
 class Solution {
 public:
     bool hasCycle(ListNode* head) {
-        while (1) {
-            if(head==nullptr){
-                return false;
-            }
+        while (head != nullptr) {
             cout << head->val<<endl;
-            if (head->val == INT_MIN) {
+            if (head->val ==INT_MAX) {
                 return true;
             }
-            head->val = INT_MIN;
-            ListNode* head2 = head->next;
-            head=head2;
+            head->val = INT_MAX;
+            head = head->next;
         }
         return false;
     }
