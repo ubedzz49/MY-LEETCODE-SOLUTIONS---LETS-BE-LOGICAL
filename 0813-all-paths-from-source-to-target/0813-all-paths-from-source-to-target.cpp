@@ -1,16 +1,16 @@
 class Solution {
 public:
-void dfs(vector<bool>& visited,vector<vector<int>>& ans,vector<int>& path,int dst,vector<vector<int>>& adj){
+void dfs(vector<bool>& visited,vector<vector<int>>& ans,vector<int>& path,vector<vector<int>>& adj){
     int n=path[path.size()-1];
     for(auto i:adj[n]){
-        if(i==dst){
-            path.push_back(dst);
+        if(i==adj.size()-1){
+            path.push_back(adj.size()-1);
             ans.push_back(path);
             path.pop_back();
         }else if(!visited[i]){
             visited[i]=1;
             path.push_back(i);
-            dfs(visited,ans,path,dst,adj);
+            dfs(visited,ans,path,adj);
             path.pop_back();
             visited[i]=0;
         }
@@ -22,7 +22,7 @@ void dfs(vector<bool>& visited,vector<vector<int>>& ans,vector<int>& path,int ds
         vector<int> path;
         path.push_back(0);
         visited[0]=1;
-        dfs(visited,ans,path,graph.size()-1,graph);
+        dfs(visited,ans,path,graph);
         return ans;
     }
 };
