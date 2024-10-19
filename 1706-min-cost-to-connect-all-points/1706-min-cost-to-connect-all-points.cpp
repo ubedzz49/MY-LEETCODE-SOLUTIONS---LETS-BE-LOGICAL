@@ -37,7 +37,8 @@ public:
             }
         }
         int ans=0;
-        while(!pq.empty()){
+        int n=0;
+        while(n<points.size()-1){
             vector<int> it=pq.top();
             pq.pop();
             if(find(it[1],parent)==find(it[2],parent)){
@@ -45,6 +46,7 @@ public:
             }
             ans+=it[0];
             join(it[1],it[2],parent,size);
+            n++;
         }
         return ans;
     }
