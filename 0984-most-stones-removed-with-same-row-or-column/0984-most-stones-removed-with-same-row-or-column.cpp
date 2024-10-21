@@ -7,21 +7,16 @@ int find(unordered_map<int,int>& parent,int r){
     parent[r]=find(parent,parent[r]);
     return parent[r];
 }
-void join(unordered_map<int,int>& parent,unordered_map<int,long long>& size,int r1,int r2){
+void join(unordered_map<int,int>& parent,unordered_map<int,int>& size,int r1,int r2){
     r1=find(parent,r1);
     r2=find(parent,r2);
     if(size[r1]>size[r2]) swap(r1,r2);
     parent[r1]=r2;
-    // if(size[r2]>INT_MAX || size[r1]>INT_MAX){
-    //     size[r2]=INT_MAX;
-    //     return;
-    // }
-    // size[r2]+=size[r1];
     size[r2]++;
 }
     int removeStones(vector<vector<int>>& stones) {
         unordered_map<int,int> parent;
-        unordered_map<int,long long> size;
+        unordered_map<int,int> size;
         for(auto it:stones){
             parent[it[0]]=it[0];
             parent[-1-it[1]]=-1-it[1];
