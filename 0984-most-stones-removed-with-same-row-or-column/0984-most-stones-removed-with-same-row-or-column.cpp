@@ -12,11 +12,12 @@ void join(unordered_map<int,int>& parent,unordered_map<int,long long>& size,int 
     r2=find(parent,r2);
     if(size[r1]>size[r2]) swap(r1,r2);
     parent[r1]=r2;
-    if(size[r2]>INT_MAX || size[r1]>INT_MAX){
-        size[r2]=INT_MAX;
-        return;
-    }
-    size[r2]+=size[r1];
+    // if(size[r2]>INT_MAX || size[r1]>INT_MAX){
+    //     size[r2]=INT_MAX;
+    //     return;
+    // }
+    // size[r2]+=size[r1];
+    size[r2]++;
 }
     int removeStones(vector<vector<int>>& stones) {
         unordered_map<int,int> parent;
