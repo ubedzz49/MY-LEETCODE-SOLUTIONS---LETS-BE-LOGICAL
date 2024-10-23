@@ -49,8 +49,6 @@ public:
                 }
             }
         }
-        cout<<p1<<" "<<p2<<endl;
-        cout<<l1<<" "<<l2;
         if(l1==l2 && p1!=p2){
             return 1;
         }
