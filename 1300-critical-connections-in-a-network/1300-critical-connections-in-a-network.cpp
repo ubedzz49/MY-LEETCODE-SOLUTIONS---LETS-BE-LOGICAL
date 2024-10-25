@@ -1,7 +1,6 @@
 class Solution {
 public:
 void dfs(vector<vector<int>>& ans,vector<bool>& visited,vector<int>& parent,vector<int>& low,vector<int>& dis,int node,vector<vector<int>>& adj,int dt){
-    cout<<node<<" ";
     for(auto it:adj[node]){
         if(it==parent[node]) continue;
         if(!visited[it]){
@@ -11,7 +10,6 @@ void dfs(vector<vector<int>>& ans,vector<bool>& visited,vector<int>& parent,vect
             low[it]=dt+1;
             dfs(ans,visited,parent,low,dis,it,adj,dt+1);
             if(low[it]>dis[node]) {ans.push_back({it,node});
-            cout<<it<<" "<<node<<" -> "<<low[it]<<" "<<dis[node]<<endl;
             }
         }
         low[node]=min(low[node],low[it]);
