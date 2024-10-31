@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
+| [2554-minimum-total-distance-traveled](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2554-minimum-total-distance-traveled) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2590-maximum-star-sum-of-a-graph) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2616-maximal-score-after-applying-k-operations) |
@@ -185,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1256-rank-transform-of-an-array](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1256-rank-transform-of-an-array) |
 | [1561-rearrange-words-in-a-sentence](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1561-rearrange-words-in-a-sentence) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
+| [2554-minimum-total-distance-traveled](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2554-minimum-total-distance-traveled) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2590-maximum-star-sum-of-a-graph](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2590-maximum-star-sum-of-a-graph) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
@@ -207,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2554-minimum-total-distance-traveled](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2554-minimum-total-distance-traveled) |
 | [2755-extra-characters-in-a-string](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2755-extra-characters-in-a-string) |
 ## Linked List
 |  |
