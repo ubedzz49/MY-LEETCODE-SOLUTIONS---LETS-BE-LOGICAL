@@ -17,19 +17,34 @@ public:
 // }
 
 //OPTIMAL SOLUTION
-void backtrack(vector<vector<int>>& ans,vector<int>& path,vector<int>& nums,vector<bool>& visited){
-    if(path.size()==nums.size()){
-        ans.push_back(path);
+// void backtrack(vector<vector<int>>& ans,vector<int>& path,vector<int>& nums,vector<bool>& visited){
+//     if(path.size()==nums.size()){
+//         ans.push_back(path);
+//         return;
+//     }
+//     for(int i=0;i<visited.size();i++){
+//         if(!visited[i]){
+//             visited[i]=1;
+//             path.push_back(nums[i]);
+//             backtrack(ans,path,nums,visited);
+//             path.pop_back();
+//             visited[i]=0;
+//         }
+//     }
+// }
+
+//MORE OPTIMAL SOLUTION
+void backtrack(vector<vector<int>>& ans,vector<int>& nums,int& ind){
+    if(ind==nums.size()){
+        ans.push_back(nums);
         return;
     }
-    for(int i=0;i<visited.size();i++){
-        if(!visited[i]){
-            visited[i]=1;
-            path.push_back(nums[i]);
-            backtrack(ans,path,nums,visited);
-            path.pop_back();
-            visited[i]=0;
-        }
+    for(int i=ind;i<nums.size();i++){
+        swap(nums[i],nums[ind]);
+        ind++;
+        backtrack(ans,nums,ind);
+        ind--;
+        swap(nums[i],nums[ind]);
     }
 }
     vector<vector<int>> permute(vector<int>& nums) {
@@ -41,10 +56,16 @@ void backtrack(vector<vector<int>>& ans,vector<int>& path,vector<int>& nums,vect
         // return ans;
 
         //OPTIMAL SOLUTION
+        // vector<vector<int>> ans;
+        // vector<int> path;
+        // vector<bool> visited(nums.size(),0);
+        // backtrack(ans,path,nums,visited);
+        // return ans;
+
+        //MORE OPTIMAL SOLUTION
         vector<vector<int>> ans;
-        vector<int> path;
-        vector<bool> visited(nums.size(),0);
-        backtrack(ans,path,nums,visited);
+        int ind=0;
+        backtrack(ans,nums,ind);
         return ans;
     }
 };
