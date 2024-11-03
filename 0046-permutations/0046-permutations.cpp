@@ -34,16 +34,16 @@ public:
 // }
 
 //MORE OPTIMAL SOLUTION
-void backtrack(vector<vector<int>>& ans,vector<int>& nums,int ind){
+void backtrack(vector<vector<int>>& ans,vector<int>& nums,int& ind){
     if(ind==nums.size()){
         ans.push_back(nums);
         return;
     }
     for(int i=ind;i<nums.size();i++){
         swap(nums[i],nums[ind]);
-        //ind++;
-        backtrack(ans,nums,ind+1);
-        //ind--;
+        ind++;
+        backtrack(ans,nums,ind);
+        ind--;
         swap(nums[i],nums[ind]);
     }
 }
@@ -64,8 +64,8 @@ void backtrack(vector<vector<int>>& ans,vector<int>& nums,int ind){
 
         //MORE OPTIMAL SOLUTION
         vector<vector<int>> ans;
-        //int ind=0;
-        backtrack(ans,nums,0);
+        int ind=0;
+        backtrack(ans,nums,ind);
         return ans;
     }
 };
