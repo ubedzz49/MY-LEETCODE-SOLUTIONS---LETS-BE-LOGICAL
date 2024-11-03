@@ -1,6 +1,6 @@
 class Solution {
 public:
-void backtrack(int it,vector<vector<int>>& ans,vector<int> curr,vector<int>& can,int target){
+void backtrack(int it,vector<vector<int>>& ans,vector<int>& curr,vector<int>& can,int target){
     if(target<0) return;
     if(target==0){
         ans.push_back(curr);
