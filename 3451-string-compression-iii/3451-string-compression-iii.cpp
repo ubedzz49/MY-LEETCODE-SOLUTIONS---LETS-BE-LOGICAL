@@ -1,11 +1,11 @@
 class Solution {
 public:
     string compressedString(string s) {
-        s.push_back('1');
+        //s.push_back('1');
         string ans="";
         int c=0;
-        for(int i=0;i<s.size()-1;i++){
-            if(s[i]==s[i+1]){
+        for(int i=0;i<s.size();i++){
+            if(i!=s.size()-1 && s[i]==s[i+1]){
                 c++;
             }else{
                 c++;
