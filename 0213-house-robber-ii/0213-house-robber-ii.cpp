@@ -10,9 +10,7 @@ public:
             prev=curr;
         }
         int a=prev2;
-        reverse(nums.begin(),nums.end());
-        nums.pop_back();
-        reverse(nums.begin(),nums.end());
+        nums.erase(nums.begin());
         prev=max(nums[0],nums[1]);
         prev2=nums[0];
         for(int i=2;i<nums.size();i++){
