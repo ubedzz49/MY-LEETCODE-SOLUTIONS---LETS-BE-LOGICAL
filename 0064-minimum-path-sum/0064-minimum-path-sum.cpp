@@ -24,7 +24,6 @@ public:
         //TABULATION
         vector<vector<int>> dp(nums.size(),vector<int>(nums[0].size(),INT_MAX));
         dp[nums.size()-1][nums[0].size()-1]=nums[nums.size()-1][nums[0].size()-1];
-        //cout<<dp[nums.size()-1][nums[0].size()-1];
         for(int j=nums[0].size()-1;j>=0;j--){
             for(int i=nums.size()-1;i>=0;i--){
                  if(i>0) dp[i-1][j]=min(dp[i-1][j],nums[i-1][j]+dp[i][j]);
