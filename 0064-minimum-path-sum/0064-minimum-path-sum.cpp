@@ -21,15 +21,31 @@ public:
         // dp[nums.size()-1][nums[0].size()-1]=nums[nums.size()-1][nums[0].size()-1];
         // return memo(dp,nums,0,0);
 
-        //TABULATION
-        vector<vector<int>> dp(nums.size(),vector<int>(nums[0].size(),INT_MAX));
-        dp[nums.size()-1][nums[0].size()-1]=nums[nums.size()-1][nums[0].size()-1];
+        // //TABULATION
+        // vector<vector<int>> dp(nums.size(),vector<int>(nums[0].size(),INT_MAX));
+        // dp[nums.size()-1][nums[0].size()-1]=nums[nums.size()-1][nums[0].size()-1];
+        // for(int j=nums[0].size()-1;j>=0;j--){
+        //     for(int i=nums.size()-1;i>=0;i--){
+        //          if(i>0) dp[i-1][j]=min(dp[i-1][j],nums[i-1][j]+dp[i][j]);
+        //          if(j>0) dp[i][j-1]=min(dp[i][j-1],nums[i][j-1]+dp[i][j]);
+        //     }
+        // }
+        // return dp[0][0];
+
+        //TABULATTION WITH SPACE OPTIIMIZATION
+        vector<int> curr(nums.size(),INT_MAX);
+        curr[nums.size()-1]=nums[nums.size()-1][nums[0].size()-1];
         for(int j=nums[0].size()-1;j>=0;j--){
-            for(int i=nums.size()-1;i>=0;i--){
-                 if(i>0) dp[i-1][j]=min(dp[i-1][j],nums[i-1][j]+dp[i][j]);
-                 if(j>0) dp[i][j-1]=min(dp[i][j-1],nums[i][j-1]+dp[i][j]);
+            vector<int> next(curr.size(),INT_MAX);
+            for(int i=curr.size()-1;i>=0;i--){
+                if(i>0) curr[i-1]=min(curr[i-1],curr[i]+nums[i-1][j]);
+                if(j>0) next[i]=min(next[i],curr[i]+nums[i][j-1]);
             }
+            if(j==0){
+                return curr[0];
+            }
+            curr=next;
         }
-        return dp[0][0];
+        return 0;
     }
 };
