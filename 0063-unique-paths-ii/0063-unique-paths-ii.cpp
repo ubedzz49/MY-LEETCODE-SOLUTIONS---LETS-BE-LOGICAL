@@ -3,23 +3,25 @@ public:
 
 //MEMOIZATION
 int memo(vector<vector<long long>>& dp,vector<vector<int>>& nums,int i,int j){
-    if(nums[i][j]==1) return 0;
+   // if(nums[i][j]==1) return 0;
     if(i==nums.size()-1 && j==nums[0].size()-1){return dp[i][j]=1;}
     long long ans=0;
     if(i+1<nums.size() && nums[i+1][j]!=1){
         if(dp[i+1][j]==-1) ans+=memo(dp,nums,i+1,j);
         else{ans+=dp[i+1][j];}
     }
-    if(j+1<nums[0].size() && nums[i][j]!=1){
+    if(j+1<nums[0].size() && nums[i][j+1]!=1){
         if(dp[i][j+1]==-1) ans+=memo(dp,nums,i,j+1);
         else{ans+=dp[i+1][j];}
     }
     return dp[i][j]=ans;
 }
+
+
     int uniquePathsWithObstacles(vector<vector<int>>& nums) {
 
         vector<vector<long long>> dp(nums.size(),vector<long long>(nums[0].size(),-1));
-        if(nums[nums.size()-1][nums[0].size()-1]==0){
+        if(nums[nums.size()-1][nums[0].size()-1]==0 && nums[0][0]==0){
             dp[nums.size()-1][nums[0].size()-1]==1;
             long long ans=memo(dp,nums,0,0);
             return ans;
