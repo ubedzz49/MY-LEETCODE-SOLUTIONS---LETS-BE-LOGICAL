@@ -23,8 +23,6 @@ bool ispos(int i,int j,int n){
             for(int i=0;i<dplast.size();i++){
                 for(int j=0;j<dplast.size();j++){
                     if(ispos(i,j,dplast.size())){
-                        //cout<<dpcurr[i][j];
-                        //cout<<dplast[i][j];
                         dpcurr[i][j]=max(dplast[i][j],dpcurr[i][j]);
                     }
                     if(ispos(i+1,j,nums.size())){
