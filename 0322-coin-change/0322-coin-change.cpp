@@ -2,6 +2,8 @@ class Solution {
 public:
     int coinChange(vector<int>& coins, int sum) {
 
+        //SPACE OPTIMIZED SOLUTION
+        //USING ONLY ONE DP VECTOR
         vector<int> dp(sum+1,INT_MAX);
         dp[0]=0;
         for(auto c:coins){
