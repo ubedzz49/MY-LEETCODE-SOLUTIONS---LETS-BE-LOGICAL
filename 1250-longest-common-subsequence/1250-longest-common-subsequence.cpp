@@ -1,6 +1,9 @@
 class Solution {
 public:
     int longestCommonSubsequence(string text1, string text2) {
+
+        //SPACE OPTIMIZED TABULATION IS BELOW
+        //TABULATION WITHOUT SPACE OPTIMIZATION IS AT CODE 360 LONGEST COMMON SUBSEQUENCE
         int m=text2.size();
         int n=text1.size();
         vector<int> dp(m+1,0);
