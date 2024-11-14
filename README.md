@@ -136,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1302-delete-characters-to-make-fancy-string](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1302-delete-characters-to-make-fancy-string) |
 | [1304-longest-happy-string](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1304-longest-happy-string) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+| [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1561-rearrange-words-in-a-sentence](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1561-rearrange-words-in-a-sentence) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
@@ -264,6 +265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1240-stone-game-ii](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1250-longest-common-subsequence) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1402-count-square-submatrices-with-all-ones) |
+| [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1559-cherry-pickup-ii](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1559-cherry-pickup-ii) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2067-maximum-number-of-points-with-cost) |
