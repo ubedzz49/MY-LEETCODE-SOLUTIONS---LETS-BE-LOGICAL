@@ -1,21 +1,10 @@
 class Solution {
 public:
-// string lcs(vector<vector<int>>& dp,int i,int j,string& ans,string& s1,string& s2){
-//     if(ans.size()==dp[dp.size()-1][dp[0].size()-1]) return ans;
-//     if(i==0 || j==0) return "";
-//     if(s1[i-1]==s2[j-1]){
-//         ans.push_back(s1[i-1]);
-//         if(lcs(dp,i-1,j-1,ans,s1,s2)!="") return ans;
-//         ans.pop_back();
-//     }
-//     else{
-//         if(lcs(dp,i-1,j,ans,s1,s2)!="") return ans;
-//         if(lcs(dp,i,j-1,ans,s1,s2)!="") return ans;
-//     }
-//     return "";
-// }
+
 
 string shortestCommonSupersequence(string s1, string s2) {
+
+
         int m=s1.size();
         int n=s2.size();
         vector<vector<int>> dp(m+1,vector<int> (n+1,0));
@@ -25,7 +14,6 @@ string shortestCommonSupersequence(string s1, string s2) {
                 else dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
             }
         }
-        cout<<dp[m][n];
         string ans="";
 
         int i=m,j=n;
