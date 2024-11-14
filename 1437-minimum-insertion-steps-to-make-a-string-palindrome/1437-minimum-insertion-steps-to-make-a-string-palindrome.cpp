@@ -1,6 +1,9 @@
 class Solution {
 public:
     int minInsertions(string s) {
+
+        //SPACE OPTIMIZED TABULATION
+        //TABULATION WITHOUT SPACE OPTIMIZATION IS GIVEN ON CODE360
         string r=s;
         reverse(r.begin(),r.end());
         int m=s.size();
