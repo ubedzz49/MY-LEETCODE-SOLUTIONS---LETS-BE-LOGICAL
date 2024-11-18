@@ -16,21 +16,38 @@ public:
 	// }
 	// return dp[dp.size()-1][dp[0].size()-1];
 
-    //SPACE OPTIMIZED TABULATION
+
+
+    //SPACE OPTIMIZED TABULATION USING TWO DP VECTORS
     long long mod=1e9+7;
     vector<int> dp(sub.size()+1,0);
+    dp[0]=1;
     for(int i=1;i<=str.size();i++){
-        //vector<int> dp1=dp;
-        int p=1;
+        vector<int> dp1=dp;
         for(int j=1;j<=sub.size();j++){
-            int temp=dp[j];
             if(str[i-1]==sub[j-1]){
-                dp[j]+=p%mod;
+                dp1[j]+=dp[j-1]%mod;
             }
-            p=temp;
         }
-        //dp=dp1;
+        dp=dp1;
     }
     return dp[dp.size()-1];
+
+
+
+    // //MOST SPACE OPTIMIZED TABULATION USING ONLY SINGLE DP VECTOR
+    // long long mod=1e9+7;
+    // vector<int> dp(sub.size()+1,0);
+    // for(int i=1;i<=str.size();i++){
+    //     int p=1;
+    //     for(int j=1;j<=sub.size();j++){
+    //         int temp=dp[j];
+    //         if(str[i-1]==sub[j-1]){
+    //             dp[j]+=p%mod;
+    //         }
+    //         p=temp;
+    //     }
+    // }
+    // return dp[dp.size()-1];
     }
 };
