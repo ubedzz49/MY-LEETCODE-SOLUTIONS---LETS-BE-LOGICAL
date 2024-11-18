@@ -19,15 +19,17 @@ public:
     //SPACE OPTIMIZED TABULATION
     long long mod=1e9+7;
     vector<int> dp(sub.size()+1,0);
-    dp[0]=1;
     for(int i=1;i<=str.size();i++){
-        vector<int> dp1=dp;
+        //vector<int> dp1=dp;
+        int p=1;
         for(int j=1;j<=sub.size();j++){
+            int temp=dp[j];
             if(str[i-1]==sub[j-1]){
-                dp1[j]+=dp[j-1]%mod;
+                dp[j]+=p%mod;
             }
+            p=temp;
         }
-        dp=dp1;
+        //dp=dp1;
     }
     return dp[dp.size()-1];
     }
