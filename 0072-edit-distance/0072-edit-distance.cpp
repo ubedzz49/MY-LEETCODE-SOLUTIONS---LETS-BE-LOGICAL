@@ -1,6 +1,8 @@
 class Solution {
 public:
     int minDistance(string word1, string word2) {
+        //OPTIMIZED APPROACH USING 2 VECTORS
+        //MOST OPTIMIZED APPROACH USING ONE VECTOR AT CODE360
         vector<int> dp(word2.size()+1,0);
         for(int i=0;i<dp.size();i++) dp[i]=i;
         for(int i=1;i<word1.size()+1;i++){
