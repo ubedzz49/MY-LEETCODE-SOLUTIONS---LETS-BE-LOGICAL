@@ -30,8 +30,6 @@ void insert(ListNode*& head,int ele){
             l2=l2->next;
         }
         if(nums1.size()<nums2.size()) swap(nums1,nums2);
-        //reverse(nums1.begin(),nums1.end());
-        //reverse(nums2.begin(),nums2.end());
         int c=0;
         for(auto it:nums2){
             nums1[c]+=it;
