@@ -1,4 +1,3 @@
-
 class Solution {
 public:
 void insert(ListNode*& head,int ele){
