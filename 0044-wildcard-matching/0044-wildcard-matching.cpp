@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool isMatch(string text, string pattern) {
+        //
         // vector<vector<bool>> dp(s.size()+1,vector<bool>(p.size()+1,0));
         // dp[0][0]=1;
         // for(int i=0;i<p.size();i++) {
