@@ -3,7 +3,7 @@ public:
     int maxProfit(vector<int>& prices) {
         int fb=-prices[0];
         int fdb=0;
-        int sb=INT_MIN;
+        int sb=-prices[0];
         int sdb=0;
         for(int i=1;i<prices.size();i++){
             int tfb=max(fb,-prices[i]);
