@@ -1,5 +1,8 @@
 class Solution {
 public:
+
+//SOLUTION USINGH DP AND STRING MATCHING
+//ACCEPTED
     static bool comparator(const string w1, const string w2) {
         return w1.size() < w2.size();
     }
