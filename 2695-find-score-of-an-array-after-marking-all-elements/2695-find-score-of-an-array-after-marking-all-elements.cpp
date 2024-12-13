@@ -7,7 +7,7 @@ public:
         }
         vector<bool> vis(nums.size(),0);
         int n=nums.size();
-        int ans=0;
+        long long ans=0;
         while(n>0){
             vector<int>v= pq.top();
             pq.pop();
