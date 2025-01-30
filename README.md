@@ -111,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2232-adding-spaces-to-a-string](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2232-adding-spaces-to-a-string) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2292-counting-words-with-a-given-prefix) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2358-number-of-ways-to-split-array](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2358-number-of-ways-to-split-array) |
@@ -667,6 +668,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2300-construct-string-with-repeat-limit](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2300-construct-string-with-repeat-limit) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
@@ -726,6 +728,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1035-cousins-in-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1484-linked-list-in-binary-tree) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2384-root-equals-sum-of-children](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2384-root-equals-sum-of-children) |
 | [2416-evaluate-boolean-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2416-evaluate-boolean-binary-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
@@ -811,6 +814,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1035-cousins-in-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1484-linked-list-in-binary-tree) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2384-root-equals-sum-of-children](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2384-root-equals-sum-of-children) |
 | [2416-evaluate-boolean-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2416-evaluate-boolean-binary-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
