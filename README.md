@@ -330,6 +330,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0813-all-paths-from-source-to-target](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0813-all-paths-from-source-to-target) |
 | [0820-find-eventual-safe-states](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0820-find-eventual-safe-states) |
 | [0854-making-a-large-island](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0854-making-a-large-island) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1035-cousins-in-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1035-cousins-in-binary-tree) |
 | [1036-rotting-oranges](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1036-rotting-oranges) |
@@ -659,6 +660,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0782-jewels-and-stones](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0782-jewels-and-stones) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [0906-walking-robot-simulation](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0906-walking-robot-simulation) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0984-most-stones-removed-with-same-row-or-column) |
@@ -732,6 +734,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0637-average-of-levels-in-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0764-n-ary-tree-level-order-traversal](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0764-n-ary-tree-level-order-traversal) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [0988-flip-equivalent-binary-trees](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0988-flip-equivalent-binary-trees) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1035-cousins-in-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1035-cousins-in-binary-tree) |
@@ -780,6 +783,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0813-all-paths-from-source-to-target](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0813-all-paths-from-source-to-target) |
 | [0820-find-eventual-safe-states](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0820-find-eventual-safe-states) |
 | [0854-making-a-large-island](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0854-making-a-large-island) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0988-flip-equivalent-binary-trees](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0988-flip-equivalent-binary-trees) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -823,6 +827,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0543-diameter-of-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0543-diameter-of-binary-tree) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [0988-flip-equivalent-binary-trees](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0988-flip-equivalent-binary-trees) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1035-cousins-in-binary-tree](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1035-cousins-in-binary-tree) |
