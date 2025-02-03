@@ -11,11 +11,6 @@
  */
 class Solution {
 public:
-bool ispre(TreeNode*& root,int val){
-    if(root==nullptr) return 0;
-    if(root->val==val) return 1;
-    return ispre(root->left,val) || ispre(root->right,val);
-}
     TreeNode* lcaDeepestLeaves(TreeNode* root) {
         unordered_map<TreeNode*,TreeNode*> parent;
         queue<pair<TreeNode*,TreeNode*>> q;
