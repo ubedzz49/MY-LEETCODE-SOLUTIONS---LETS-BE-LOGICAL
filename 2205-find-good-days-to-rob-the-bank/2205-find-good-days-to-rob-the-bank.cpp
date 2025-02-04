@@ -14,9 +14,7 @@ public:
                 bef[i]=c;
                 c++;
             }
-            //cout<<i<<" "<<bef[i]<<endl;
         }
-        //cout<<"----"<<endl;
         c=1;
         for(int i=n-2;i>=0;i--){
             if(nums[i]>nums[i+1]){
@@ -27,7 +25,6 @@ public:
                 af[i]=c;
                 c++;
             }
-            //cout<<i<<" "<<af[i]<<endl;
         }
         vector<int> ans;
         for(int i=k;i<n-k;i++){
