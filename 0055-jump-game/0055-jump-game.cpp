@@ -7,6 +7,7 @@ public:
             if(isvis[i]==0) continue;
             for(int j=1;j<=nums[i];j++){
                 if(i+j<isvis.size()) isvis[i+j]=1;
+                else break;
             }
         }
         return isvis[isvis.size()-1];
