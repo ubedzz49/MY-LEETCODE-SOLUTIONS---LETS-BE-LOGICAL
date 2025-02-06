@@ -1,10 +1,11 @@
 class Solution {
 public:
     vector<vector<int>> insert(vector<vector<int>>& ints, vector<int>& newint) {
-           auto it = lower_bound(ints.begin(), ints.end(), newint, 
-           [](const vector<int>& a, const vector<int>& b) {
-            return a[0] < b[0];});
-            ints.insert(it, newint);
+           int c=0;
+            for(int i=0;i<ints.size();i++){
+                if(ints[i][0]<newint[0]) c++;
+            }
+            ints.insert(ints.begin()+c,newint);
         int st=ints[0][0];
         int end=ints[0][1];
         vector<vector<int>> ans;
