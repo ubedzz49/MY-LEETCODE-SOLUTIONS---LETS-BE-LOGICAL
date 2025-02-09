@@ -57,6 +57,7 @@ if(isend(grid)==1){
         int c=0;
         while(isend(grid)==0){
             c=c+1;
+            cout<<c<<" ";
             vector<vector<int>> grid1=grid;
             for(int i=0;i<grid.size();i++){
                 for(int j=0;j<grid[0].size();j++){
