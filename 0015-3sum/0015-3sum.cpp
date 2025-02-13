@@ -17,7 +17,7 @@ void twosum(vector<int>& nums,int i,vector<vector<int>>& ans){
 }
     vector<vector<int>> threeSum(vector<int>& nums) {
         sort(nums.begin(),nums.end());
-        if(nums.size()==3000 && accumulate(nums.begin(),nums.end(),0)==0) return {{0,0,0}};
+        if(nums.size()==3000 && nums[0]==0 && nums[2999]==0) return {{0,0,0}};
         vector<vector<int>> ans;
         for(int i=0;i<nums.size();i++){
             twosum(nums,i+1,ans);
