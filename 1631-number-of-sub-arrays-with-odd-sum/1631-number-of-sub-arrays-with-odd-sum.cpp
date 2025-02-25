@@ -1,21 +1,26 @@
 class Solution {
 public:
+
+
     int numOfSubarrays(vector<int>& arr) {
-        const unsigned int p=pow(10,9)+7;
-        vector<int> dp={1,0,0};
+        const int p= 1e9 +7;
+        int od=0;
+        int ev=0;
         long long ans=0;
         for(int i=0;i<arr.size();i++){
-            vector<int> dp1=dp;
+            int od1=od;
+            int ev1=ev;
             if(arr[i]&1){
-                dp[1]=dp1[2]+dp1[0];
-                dp[2]=dp1[1];
+                od=ev1+1;
+                ev=od1;
             }
             else{
-                dp[2]=dp1[0]+dp1[2];
-                dp[1]=dp1[1];
+                ev=1+ev1;
+                od=od1;
             }
-            ans+=(dp[1]);
+            ans+=(od);
         }
         return ans%p;
+        
     }
 };
