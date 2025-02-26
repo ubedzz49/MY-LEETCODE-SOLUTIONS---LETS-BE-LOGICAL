@@ -1159,5 +1159,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0620-not-boring-movies](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/0620-not-boring-movies) |
 | [1258-article-views-i](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1258-article-views-i) |
 | [1827-invalid-tweets](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1827-invalid-tweets) |
+| [1877-find-followers-count](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1877-find-followers-count) |
 | [2127-employees-whose-manager-left-the-company](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/2127-employees-whose-manager-left-the-company) |
 <!---LeetCode Topics End-->
