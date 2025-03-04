@@ -11,30 +11,24 @@
  */
 class Solution {
 public:
-void make(vector<int>& pre,vector<int>& ino,TreeNode*& root,int& pi,int i,int j){
-    if(i>j) return;
-    TreeNode* newnode=new TreeNode;
-    newnode->val=pre[pi];
-    newnode->left=nullptr;
-    newnode->right=nullptr;
-    root=newnode;
+int p=0;
+void fn(vector<int>& pre,vector<int>& in,int si,int ei,TreeNode*& root){
+    if(si>ei) return;
+    root=new TreeNode;
+    root->val=pre[p];
+    root->left=nullptr;
+    root->right=nullptr;
+    p++;
     int ind=-1;
-    for(int ii=i;ii<=j;ii++){
-        if(ino[ii]==pre[pi]){
-            ind=ii;
-            break;
-        }
+    for(int i=si;i<=ei;i++){
+        if(in[i]==pre[p-1]) ind=i;
     }
-    pi++;
-    make(pre,ino,root->left,pi,i,ind-1);
-    make(pre,ino,root->right,pi,ind+1,j);
+    fn(pre,in,si,ind-1,root->left);
+    fn(pre,in,ind+1,ei,root->right);
 }
-    TreeNode* buildTree(vector<int>& pre, vector<int>& ino) {
-        int i=0;
-        int j=pre.size()-1;
-        int pi=0;
-        TreeNode* root=nullptr;
-        make(pre,ino,root,pi,i,j);
-        return root;
+    TreeNode* buildTree(vector<int>& pre, vector<int>& in) {
+        TreeNode* ans=nullptr;
+        fn(pre,in,0,pre.size()-1,ans);
+        return ans;
     }
 };
