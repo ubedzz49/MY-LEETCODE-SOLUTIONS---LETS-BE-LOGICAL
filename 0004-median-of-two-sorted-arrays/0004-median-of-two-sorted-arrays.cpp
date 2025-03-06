@@ -8,14 +8,12 @@ public:
         int f=s/2;
         if((s&1)==0) f--;
         while(t<f){
-            //cout<<i<<" "<<j<<endl;
             if(i==nums1.size()){j++;t++; continue;}
             if(j==nums2.size()){i++;t++; continue;}
             if(nums1[i]<nums2[j]) i++;
             else j++;
             t++;
         }
-        cout<<i<<" "<<j<<endl;
         if((s&1)==1){ 
             if(i==nums1.size()) return nums2[j];
             if(j==nums2.size()) return nums1[i];
