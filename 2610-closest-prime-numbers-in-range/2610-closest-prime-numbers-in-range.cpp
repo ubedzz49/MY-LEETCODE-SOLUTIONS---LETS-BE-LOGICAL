@@ -5,7 +5,7 @@ public:
        
 vector<bool> mpp(right+1,1);
 mpp[0]=0;
-mpp[1]=1;
+mpp[1]=0;
 for(int i=2;i<right;i++){
     if(mpp[i]==1){
         if(i*i>right) break;
