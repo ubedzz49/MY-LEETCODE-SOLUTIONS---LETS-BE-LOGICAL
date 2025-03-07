@@ -29,7 +29,6 @@ for(int i=2;i<right;i++){
             }
         }
         if(c<2) return {-1,-1};
-        if(left==1 && right==1000000) return {2,3};
         return ans;
     }
 };
