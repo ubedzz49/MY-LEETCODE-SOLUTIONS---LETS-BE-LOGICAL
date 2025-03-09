@@ -11,8 +11,7 @@ public:
         for(int ii=k;ii<nums.size()-1;ii++){
             int i=ii%nums.size();
             if(nums[i]==nums[(ii-1)%nums.size()]) br=ii-1;
-            if(ii-k>=br) {ans++; cout<<ii<<" ";}
-            cout<<ii<<"  ";
+            if(ii-k>=br) {ans++;}
         }
         return ans;
     }
