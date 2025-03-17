@@ -13,31 +13,26 @@ public:
     ListNode* removeZeroSumSublists(ListNode* head) {
         ListNode dummy(0);
         dummy.next = head;
-        unordered_map<int, ListNode*> mpp;
+        unordered_map<int,ListNode*> mpp;
         int sm = 0;
-        
         ListNode* h = &dummy;
-        
         while (h) {
-            sm += h->val;
+            sm+=h->val;
             if (mpp.count(sm)) {
-                ListNode* prev = mpp[sm];
-                ListNode* temp = prev->next;
+                ListNode* prev=mpp[sm];
+                ListNode* temp=prev->next;
                 int sum = sm;
-                
                 while (temp != h) {
-                    sum += temp->val;
+                    sum+= temp->val;
                     mpp.erase(sum);
                     temp = temp->next;
                 }
                 
-                prev->next = h->next; 
+                prev->next=h->next; 
             } else {
-                mpp[sm] = h;
+                mpp[sm]=h;
             }
-            h = h->next;
-        }
-        
+            h= h->next;}
         return dummy.next;
     }
 };
