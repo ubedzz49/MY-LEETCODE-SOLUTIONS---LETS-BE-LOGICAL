@@ -8,15 +8,15 @@
  */
 class Solution {
 public:
-    bool hasCycle(ListNode* head) {
-        while (head != nullptr) {
-            cout << head->val<<endl;
-            if (head->val ==INT_MAX) {
-                return true;
-            }
-            head->val = INT_MAX;
-            head = head->next;
+    bool hasCycle(ListNode *head) {
+        ListNode* fast=head->next;
+        ListNode* slow=head;
+        while(fast){
+            if(fast==slow) return 1;
+            fast=fast->next;
+            if(fast) fast=fast->next;
+            slow=slow->next;
         }
-        return false;
+        return 0;
     }
 };
