@@ -22,19 +22,20 @@ public:
         //     }
         // }
         // return ans;
-
-        unordered_map<int,int> mpp1;
+        if(k==nums.size()) return accumulate(nums.begin(),nums.end(),0);
         int sum=0;
         for(int i=0;i<k;i++){
             sum+=nums[i];
-            mpp1[i+1]=sum;
         }
-        reverse(nums.begin(),nums.end());
         int ans=sum;
+        int ssum=sum;
         sum=0;
-        for(int i=0;i<k;i++){
+        int kk=k-1;
+        for(int i=nums.size()-1;i>=nums.size()-k;i--){
             sum+=nums[i];
-            int currsum=sum+mpp1[k-i-1];
+            ssum-=nums[kk];
+            kk--;
+            int currsum=sum+ssum;
             ans=max(ans,currsum);
         }
         return ans;
