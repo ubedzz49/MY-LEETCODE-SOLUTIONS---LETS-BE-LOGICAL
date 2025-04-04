@@ -11,40 +11,47 @@
  */
 class Solution {
 public:
+bool check(TreeNode* root,unordered_set<TreeNode*> stt){
+    queue<TreeNode*> q;
+    q.push(root);
+    while(!q.empty()){
+        if(stt.find(q.front())!=stt.end()) stt.erase(q.front());
+        if(q.front()->left) q.push(q.front()->left);
+        if(q.front()->right) q.push(q.front()->right);
+        q.pop();
+    }
+    if(stt.empty()) return 1;
+    return 0;
+}
     TreeNode* lcaDeepestLeaves(TreeNode* root) {
-        unordered_map<TreeNode*,TreeNode*> parent;
-        queue<pair<TreeNode*,TreeNode*>> q;
-        q.push(make_pair(root,root));
-        unordered_map<TreeNode*,bool> last;
+        vector<TreeNode*> lf;
+        queue<TreeNode*> q;
+        q.push(root);
+        lf={root};
         while(!q.empty()){
-            unordered_map<TreeNode*,bool> last2;
-            last=last2;
-            int s=q.size();
-            while(s>0){
-                s--;
-                last[q.front().first]=1;
-                parent[q.front().first]=q.front().second;
-                if(q.front().first->left) q.push(make_pair(q.front().first->left,q.front().first));
-                if(q.front().first->right) q.push(make_pair(q.front().first->right,q.front().first));
+            int n=q.size();
+            lf={};
+            while(n>0){
+                n--;
+                lf.push_back(q.front());
+                if(q.front()->left) q.push(q.front()->left);
+                if(q.front()->right) q.push(q.front()->right);
                 q.pop();
             }
         }
-        TreeNode* ans=nullptr;
-        bool b=false;
-        if(last.size()==1){
-            for(auto it:last){
-                return it.first;
-            }
-        }
-        while(b==false){
-            unordered_map<TreeNode*,bool> last2;
-            for(auto it:last){
-                last2[parent[it.first]]=1;
-                ans=parent[it.first];
-            }
-            last=last2;
-            if(last.size()==1) b=true;
-        }
+        unordered_set<TreeNode*> stt;
+        for(auto it:lf) stt.insert(it);
+
+        TreeNode* ans=root;
+        //queue<TreeNode*> q;
+    q.push(root);
+    while(!q.empty()){
+        if(check(q.front(),stt)) ans=q.front();
+        if(q.front()->left) q.push(q.front()->left);
+        if(q.front()->right) q.push(q.front()->right);
+        q.pop();
+    }
+
         return ans;
     }
 };
