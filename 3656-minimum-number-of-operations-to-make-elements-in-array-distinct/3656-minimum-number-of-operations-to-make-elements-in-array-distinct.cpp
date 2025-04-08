@@ -19,8 +19,6 @@ public:
             mpp[nums[i+2]]--;
             if(mpp[nums[i+2]]==1) c--;
             if(c==0) return ans;
-            for(auto it:mpp) cout<<it.first<<"--"<<it.second<<endl;
-            cout<<c<<" "<<nums[i]<<endl;
         }
         return ans;
     }
