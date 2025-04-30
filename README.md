@@ -103,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1392-find-the-difference-of-two-arrays](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1397-search-suggestions-system](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1397-search-suggestions-system) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1402-count-square-submatrices-with-all-ones) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1428-jump-game-iii](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1428-jump-game-iii) |
 | [1435-xor-queries-of-a-subarray](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1435-xor-queries-of-a-subarray) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1468-check-if-n-and-its-double-exist) |
@@ -699,6 +700,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1014-k-closest-points-to-origin](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1014-k-closest-points-to-origin) |
 | [1240-stone-game-ii](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1240-stone-game-ii) |
 | [1303-minimum-moves-to-reach-target-score](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1303-minimum-moves-to-reach-target-score) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1477-product-of-the-last-k-numbers](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1477-product-of-the-last-k-numbers) |
 | [1500-count-largest-group](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1500-count-largest-group) |
 | [1610-xor-operation-in-an-array](https://github.com/ubedzz49/MY-LEETCODE-SOLUTIONS---LETS-BE-LOGICAL/tree/master/1610-xor-operation-in-an-array) |
