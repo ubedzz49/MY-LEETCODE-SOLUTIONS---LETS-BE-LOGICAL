@@ -14,6 +14,7 @@ public:
             for(auto it:rooms[r]){
                 if(!mpp[it]){
                     ans--;
+                    if(ans==0) return true;
                     q.push(it);
                     mpp[it]=1;
                 }
